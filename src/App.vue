@@ -1,4 +1,5 @@
 <script>
+import axios from 'axios';
 import componentTemplate from './components/componentTemplate.vue'
 
 export default{
