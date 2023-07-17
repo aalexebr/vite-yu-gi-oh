@@ -16,10 +16,10 @@ export default{
 </script>
 
 <template>
-    <div class="my-col-25 p-2">
+    <div class="my-col-25 p-2 bg-primary-subtle">
         <div class="row justify-content-center">
             
-            <img :src="store.cards[i].card_images[0].image_url_small" alt="">
+            <img :src="store.cards[i].card_images[0].image_url" alt="">
             
             <div class="text-center">
                 <h4>
@@ -35,7 +35,8 @@ export default{
 
 <style lang="scss" scoped>
     .my-col-25{
-        width: 25%;
+        width: calc((100% / 5) - 20px);
         border: 1px dotted red;
+        margin: 10px;
     }
 </style>
