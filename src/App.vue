@@ -1,10 +1,13 @@
 <script>
 import axios from 'axios';
-import componentTemplate from './components/componentTemplate.vue'
+import componentTemplate from './components/componentTemplate.vue';
+import {store} from './store';
 
 export default{
     data(){
-      return{}
+      return{
+        store,
+      }
     },
     components: {
       componentTemplate
@@ -13,6 +16,7 @@ export default{
 </script>
 
 <template>
+  {{ store.text }}
   <componentTemplate/>
 </template>
 
