@@ -10,9 +10,7 @@ export default{
 </script>
 
 <template>
-<div>
-  templae
-</div>
+
 </template>
 
 <style lang="scss" scoped>
