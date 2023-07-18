@@ -17,10 +17,15 @@ export default{
 <template>
     <main class="bg-primary-subtle">
         <div class="container py-3">
-            <select name="" id="" class="m-3">
-
-            </select>
-        
+            <!-- <form action=""> -->
+                <select name="" id="" class="m-3" v-model="store.selectType">
+                    <option value="">Select your option</option>
+                    <option v-for="(element,i) in store.archetypeArray" :key="i"
+                    :value="store.archetypeArray[i].archetype_name">{{ store.archetypeArray[i].archetype_name }}</option>
+                </select>
+                
+                <!-- <button type="submit">click</button>
+            </form> -->
             <div class="card-container p-3">
                 <div class="bg-secondary p-2">
                     found {{ store.cards.length }} cards
